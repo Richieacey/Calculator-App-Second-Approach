@@ -1,0 +1,286 @@
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'League Spartan', sans-serif;
+    position: relative;
+}
+
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 4.4%;
+    row-gap: 9%;
+    height: 18rem;
+    width: 88%;
+}
+
+.calculator-container {
+    position: absolute;
+    width: 40%;
+    display: flex;
+    right: 30%;
+}
+
+.grid-container {
+    background-color: var(--kyp-bg-color);
+    border-radius: 0.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.span {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2rem;
+    justify-content: space-around;
+    height: 3.375rem;
+}
+
+.display {
+    font-size: 3.2rem;
+    background-color: var(--scr-bg-color);
+    color: var(--text-color);
+    width: 96%;
+    margin-bottom: 1.2rem;
+    height: 5.7rem;
+    border-radius: 0.7rem;
+    padding-right: 1.2rem;
+    text-align: right;
+    border: none;
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -3rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.theme-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.theme {
+   font-size: 0.6rem; 
+   color: var(--text-color);
+   margin-right: 1.5rem;
+}
+
+.theme-toggle {
+    margin-bottom: 1.5rem;
+}
+
+.theme-button-container {
+    background-color: var(--tg-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 1.25rem;
+    width: 3rem;
+
+}
+
+.theme-one-btn {
+    background-color: var(--key-bg-color2);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 6rem;
+    border: none;
+}
+
+.theme-two-btn {
+    background-color: var(--key-bg-color2);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 6rem;
+    border: none;
+    opacity: 1;
+}
+
+.span {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.4%;
+    width: 88%;
+}
+
+.theme-three-btn {
+    background-color: var(--key-bg-color2);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 6rem;
+    border: none;
+    opacity: 1;
+}
+
+.theme-number {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.reset-btn {
+    border: none;
+    border-radius: 0.6rem;
+    background-color:   hsl(225, 21%, 49%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--key-txt-color2);
+    box-shadow:0rem 0.2rem hsl(224, 28%, 35%);
+    cursor: pointer;
+}
+
+.result-btn {
+    background-color: var(--key-bg-color2);
+    border: none;
+    border-radius: 0.6rem;
+    color: var(--equals-color);
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow:0rem 0.2rem var(--key-bg-color2-shadow);
+    cursor: pointer;
+}
+
+.result-btn:active {
+    background-color: hsl(6, 79%, 58%);
+    box-shadow: none;
+}
+
+.number, .operation {
+    border-radius: 0.6rem;
+    border: none;
+    color: var(--key-txt-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color:  var(--key-bg-color3);
+    box-shadow:0rem 0.2rem var(--key-bg-color3-shadow);
+    cursor: pointer;
+}
+
+.number:active, .operation:active {
+    background-color: white;
+    color: hsl(221, 14%, 42%);
+    box-shadow: none;
+}
+
+.delete {
+    border-radius: 0.6rem;
+    border: none;
+    background-color:   var(--key-bg-color1);
+    color: var(--key-txt-color2);
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow:0rem 0.2rem var(--key-bg-color1-shadow);
+    cursor: pointer;
+}
+
+.reset-btn:active, .delete:active {
+    background-color:   hsl(225, 32%, 60%);
+    box-shadow: none;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+.theme-one-btn, .theme-two-btn, .theme-three-btn {
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 300px;
+        height: 667px;
+    }
+}
+
+:root,
+:root.theme-one-btn {
+    --main-bg-color: hsl(222, 26%, 31%);
+    --tg-bg-color: hsl(223, 31%, 20%);
+    --kyp-bg-color: hsl(223, 31%, 20%);
+    --scr-bg-color: hsl(224, 36%, 15%);
+    --key-bg-color1: hsl(225, 21%, 49%);
+    --key-bg-color1-shadow: hsl(224, 28%, 35%);
+    --key-bg-color2: hsl(6, 63%, 50%);
+    --key-bg-color2-shadow: hsl(6, 70%, 34%);
+    --key-bg-color3: hsl(30, 25%, 89%);
+    --key-bg-color3-shadow: hsl(28, 16%, 65%);
+    --key-txt-color: hsl(221, 14%, 31%);
+    --key-txt-color2: white;
+    --text-color: white;
+    --equals-color: white;
+}
+
+:root.theme-two-btn {
+    --main-bg-color: hsl(0, 0%, 90%);
+    --tg-bg-color: hsl(0, 5%, 81%);
+    --kyp-bg-color: hsl(0, 5%, 81%);
+    --scr-bg-color: hsl(0, 0%, 93%);
+    --key-bg-color1: hsl(185, 42%, 37%);
+    --key-bg-color1-shadow: hsl(185, 58%, 25%);
+    --key-bg-color2: hsl(25, 98%, 40%);
+    --key-bg-color2-shadow: hsl(25, 99%, 27%);
+    --key-bg-color3: hsl(45, 7%, 89%);
+    --key-bg-color3-shadow: hsl(35, 11%, 61%);
+    --key-txt-color: hsl(60, 10%, 19%);
+    --key-txt-color2: white;
+    --text-color: white;
+    --equals-color: white;
+}
+
+:root.theme-three-btn {
+    --main-bg-color: hsl(268, 75%, 9%);
+    --tg-bg-color: hsl(268, 71%, 12%);
+    --kyp-bg-color: hsl(268, 71%, 12%);
+    --scr-bg-color: hsl(268, 71%, 12%);
+    --key-bg-color1: hsl(281, 89%, 26%);
+    --key-bg-color1-shadow: hsl(285, 91%, 52%);
+    --key-bg-color2: hsl(176, 100%, 44%);
+    --key-bg-color2-shadow: hsl(177, 92%, 70%);
+    --key-bg-color3: hsl(268, 47%, 21%);
+    --key-bg-color3-shadow: hsl(290, 70%, 36%);
+    --key-txt-color: hsl(52, 100%, 62%);
+    --key-txt-color2: white;
+    --text-color: hsl(52, 100%, 62%);
+    --equals-color: hsl(198, 20%, 13%);
+}

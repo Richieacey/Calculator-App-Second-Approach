@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="calculator-container">
+    <header>
+      <div class="title">
+        calc
+      </div>
+      <div class="theme-container">
+        <div class="theme">
+          THEME
+        </div>
+        <div class="theme-toggle">
+          <div id="theme-number-text" class="theme-number">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div class="theme-button-container">
+            <button onclick="themeOne()" class="theme-one-btn"></button>
+            <button onclick="themeTwo()" value="theme-two-btn" class="theme-two-btn"></button>
+            <button onclick="themeThree()" value="theme-three-btn" class="theme-three-btn"></button>
+          </div>
+      </div>
+     
+      </div>
+    </header>
+    <div class="container-card">
+      <input type="text" value="0" class="display" disabled>
+      <div class="grid-container">
+        <div class="calculator-grid">
+          <button value="7" data-number="seven" class="number">7</button>
+          <button value="8" data-number="eight" class="number">8</button>
+          <button value="9" data-number="nine" class="number">9</button>
+          <button value="delete" data-delete="delete" class="delete">DEL</button>
+          <button value="4" data-number="four" class="number">4</button>
+          <button value="5" data-number="five" class="number">5</button>
+          <button value="6" data-number="six" class="number">6</button>
+          <button value="+" data-operation="add" class="operation">+</button>
+          <button value="1" data-number="one" class="number">1</button>
+          <button value="2" data-number="two" class="number">2</button>
+          <button value="3" data-number="three" class="number">3</button>
+          <button value="-" data-operation="subtract" class="operation">-</button>
+          <button value="." data-decimal="decimal" class="number">.</button>
+          <button value="0" data-number="zero" class="number">0</button>
+          <button value="/" data-operation="divide" class="operation">/</button>
+          <button value="*" data-operation="multiply" class="operation">&times;</button>
+         
+        </div>
+        <div class="span">
+          <button value="reset" data-reset="reset" class="reset-btn">RESET</button>
+          <button value="calculate" data-calculate="calculate" class="result-btn">=</button>
+        </div>
+      
+      </div>
+  </div>
+ 
+  
+  
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Richie Ace</a>.
+  </div>
+  <script src="second.js"></script>
+</body>
+</html>
